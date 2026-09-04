@@ -1,6 +1,6 @@
 # Desafio Técnico — Front-End Júnior 2
 
-##LINK DO VIDEO EXPLICATIVO: https://drive.google.com/file/d/18PAfKV0boAfq-ayLh_I25LlykhjgOmUV/vi
+##LINK DO VIDEO EXPLICATIVO: [https://drive.google.com/file/d/18PAfKV0boAfq-ayLh_I25LlykhjgOmUV/vi](https://drive.google.com/file/d/18PAfKV0boAfq-ayLh_I25LlykhjgOmUV/view?usp=drive_link)
 
 Desafio técnico realizado para a XMX Corp.
 
