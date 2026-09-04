@@ -21,3 +21,6 @@ Basta clonar o repositório:
 ```bash
 git clone URL_DO_REPOSITORIO
 cd NOME_DO_PROJETO
+
+
+##LINK DO VIDEO: https://drive.google.com/file/d/18PAfKV0boAfq-ayLh_I25LlykhjgOmUV/view
