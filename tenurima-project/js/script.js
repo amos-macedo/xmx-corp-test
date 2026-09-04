@@ -22,22 +22,66 @@
   function initTestimonialSlider() {
     const track = document.querySelector('.testimonial-slider__track');
     if (!track) return;
-    const slides = track.children.length;
-    let index = 0;
+    const originals = Array.from(track.children);
+    const slides = originals.length;
+    if (!slides) return;
 
-    const update = () => {
-      track.style.transform = `translateX(-${index * 100}%)`;
+    const cloneSet = () => originals.map((el) => {
+      const clone = el.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      clone.setAttribute('inert', '');
+      return clone;
+    });
+
+    const frag = document.createDocumentFragment();
+    cloneSet().forEach((el) => frag.appendChild(el));
+    originals.forEach((el) => frag.appendChild(el));
+    cloneSet().forEach((el) => frag.appendChild(el));
+    track.appendChild(frag);
+
+    let pos = slides;
+
+    const step = () => {
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      return track.children[0].getBoundingClientRect().width + gap;
     };
 
+    const moveTo = (p) => {
+      track.style.transform = `translateX(-${p * step()}px)`;
+    };
+
+    const snapWithoutTransition = (p) => {
+      track.style.transition = 'none';
+      moveTo(p);
+      // eslint-disable-next-line no-unused-expressions
+      track.offsetHeight;
+      track.style.transition = '';
+    };
+
+    track.addEventListener('transitionend', (e) => {
+      if (e.target !== track || e.propertyName !== 'transform') return;
+      if (pos >= slides * 2) {
+        pos -= slides;
+        snapWithoutTransition(pos);
+      } else if (pos < slides) {
+        pos += slides;
+        snapWithoutTransition(pos);
+      }
+    });
+
     document.querySelector('.slider__btn--next').addEventListener('click', () => {
-      index = (index + 1) % slides;
-      update();
+      pos += 1;
+      moveTo(pos);
     });
 
     document.querySelector('.slider__btn--prev').addEventListener('click', () => {
-      index = (index - 1 + slides) % slides;
-      update();
+      pos -= 1;
+      moveTo(pos);
     });
+
+    window.addEventListener('resize', () => snapWithoutTransition(pos));
+
+    snapWithoutTransition(pos);
   }
 
   function initBuyButtons() {

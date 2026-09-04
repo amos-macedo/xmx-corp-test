@@ -4,19 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tenurima™ — Support Healthy Blood Pressure, Circulation & Oxygen Levels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<div class="top-band" id="top">
+<img class="hero__glow" src="assets/images/hero-heart-glow.png" width="867" height="647" alt="" aria-hidden="true">
 <header class="header">
   <div class="header__inner container">
     <a href="#top" class="logo">
-      <span class="logo__dot" aria-hidden="true"></span>
+      <img class="logo__dot" src="assets/icons/icon-drop.png" width="39" height="39" alt="" aria-hidden="true">
       <span class="logo__text">TENURIMA</span>
     </a>
     <nav class="nav" aria-label="Navegação principal">
       <a href="#price">Price</a>
-      <a href="#ingredients">Ingredientes</a>
+      <a href="#ingredients">Ingredients</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#faq">FAQ</a>
     </nav>
@@ -27,8 +32,6 @@
   </div>
 </header>
 
-<main id="top">
-
   <!-- HERO -->
   <section class="hero">
     <div class="hero__inner container">
@@ -38,10 +41,10 @@
           <span>4.9/5 Customer Rating</span>
         </div>
         <h1 class="hero__title">
-          Support Healthy Blood Pressure, <span class="accent">Circulation &amp; Oxygen Levels.</span>
+          Support Healthy<br class="br-mobile"> Blood<br class="br-desktop"> Pressure,<br class="br-mobile"> <span class="accent">Circulation &amp;<br> Oxygen Levels.</span>
         </h1>
         <p class="hero__desc">
-          Tenurima™ Support was designed to help your body maintain healthy blood pressure levels using a powerful blend of vitamins and botanical ingredients.
+Tenurima™ Blood Pressure <strong>Support<br class="br-mobile"> was designed to<br class="br-desktop"> help your body<br class="br-mobile"> maintain healthy blood pressure<br class="br-desktop"> levels</strong><br class="br-mobile"> using a powerful blend of vitamins and<br> botanical ingredients.
         </p>
         <a href="#price" class="btn btn--primary">
           <img src="assets/icons/cart.png" alt="" class="btn__icon" width="16" height="16">
@@ -50,37 +53,56 @@
         <p class="hero__guarantee">60 Day Money-Back Guarantee</p>
       </div>
       <div class="hero__media">
-        <img class="hero__glow" src="assets/images/hero-glow.png" alt="" loading="lazy" aria-hidden="true">
-        <img class="hero__bottle hero__bottle--back" src="assets/images/bottle-straight.png" alt="Frasco Tenurima" loading="lazy">
-        <img class="hero__bottle hero__bottle--front" src="assets/images/bottle-small.png" alt="Frasco Tenurima Blood Pressure Support" loading="lazy">
-        <img class="hero__pill" src="assets/images/pill-red.png" alt="" loading="lazy" aria-hidden="true">
+        <img class="hero__cells" src="assets/images/hero-cells.png" width="710" height="568" alt="" aria-hidden="true">
+        <img class="hero__pill hero__pill--red" src="assets/images/pill-red.png" width="129" height="107" alt="" aria-hidden="true">
+        <img class="hero__bottle hero__bottle--back" src="assets/images/bottle-blurred.png" width="628" height="628" alt="Frasco Tenurima">
+        <img class="hero__pill hero__pill--blurred" src="assets/images/pill-glass-2.png" width="89" height="92" alt="" aria-hidden="true">
+        <img class="hero__bottle hero__bottle--front" src="assets/images/bottle-small.png" width="490" height="457" alt="Frasco Tenurima Blood Pressure Support">
+        <img class="hero__pill hero__pill--sharp" src="assets/images/pill-glass-1.png" width="91" height="86" alt="" aria-hidden="true">
         <ul class="hero__badges">
-          <li>Supports healthy blood pressure</li>
-          <li>Promotes healthy blood flow</li>
-          <li>Helps maintain optimal oxygen levels</li>
+          <li><span class="check-badge" aria-hidden="true">&#10003;</span>Supports healthy blood pressure</li>
+          <li><span class="check-badge" aria-hidden="true">&#10003;</span>Promotes healthy blood flow</li>
+          <li><span class="check-badge" aria-hidden="true">&#10003;</span>Helps maintain optimal oxygen levels</li>
+          <li class="hero__made">
+            <img src="assets/icons/made-usa.png" alt="" width="24">
+            Made in the USA
+          </li>
         </ul>
-        <p class="hero__made">
-          <img src="assets/icons/made-usa.png" alt="" width="24">
-          Made in the USA
-        </p>
       </div>
     </div>
     <div class="hero__scroll" aria-hidden="true"></div>
   </section>
+  <svg width="0" height="0" style="position: absolute;" aria-hidden="true">
+    <defs>
+      <clipPath id="hero-corner-clip-left" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 L0.835,0 Q0.85,0 0.8575,0.05 L1,1 L0,1 Z" />
+      </clipPath>
+      <clipPath id="hero-corner-clip-right" clipPathUnits="objectBoundingBox">
+        <path d="M1,0 L1,1 L0,1 L0.1425,0.05 Q0.15,0 0.165,0 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+  <div class="hero__corner hero__corner--left" aria-hidden="true"></div>
+  <div class="hero__corner hero__corner--right" aria-hidden="true"></div>
+</div>
+
+<main>
 
   <!-- ABOUT -->
   <section class="about">
+    <img class="about__elder" src="assets/images/about-elder.png" width="955" height="591" alt="Pessoa idosa sorrindo">
     <div class="about__inner container">
       <div class="about__media">
-        <img class="about__elder" src="assets/images/about-elder.png" alt="Pessoa idosa sorrindo" loading="lazy">
-        <img class="about__bottle" src="assets/images/bottle-about.png" alt="Frasco Tenurima" loading="lazy">
-        <img class="about__diagram" src="assets/images/body-diagram.png" alt="Diagrama do sistema circulatório e pontos de atenção cardiovascular" loading="lazy">
+        <img class="about__pill about__pill--left" src="assets/images/pill-red.png" width="129" height="107" alt="" aria-hidden="true">
+        <img class="about__bottle" src="assets/images/bottle-about.png" width="421" height="431" alt="Frasco Tenurima">
+        <img class="about__pill about__pill--right" src="assets/images/pill-red.png" width="129" height="107" alt="" aria-hidden="true">
+        <img class="about__diagram" src="assets/images/body-diagram.png" width="262" height="384" alt="Diagrama do sistema circulatório e pontos de atenção cardiovascular">
       </div>
       <div class="about__content">
         <p class="eyebrow">About Product</p>
         <h2>What Is <span class="accent">Tenurima™?</span></h2>
-        <p>Tenurima™ is a premium dietary supplement formulated to support cardiovascular health and blood pressure balance. Each capsule delivers essential vitamins and a proprietary herbal blend traditionally used to promote circulation, heart function, and overall wellness.</p>
-        <p>Whether you're looking to support your daily health routine or maintain balance as you age, Tenurima™ works naturally with your body — not against it.</p>
+        <p><strong>Tenurima™ is a premium dietary supplement formulated to support cardiovascular health and blood pressure balance.</strong> Each capsule delivers essential vitamins and a proprietary herbal blend traditionally used to promote circulation, heart function, and overall wellness.</p>
+        <p>Whether you're looking to support your daily health routine or maintain balance as you age, <strong>Tenurima™ works naturally with your body — not against it.</strong></p>
         <a href="#price" class="btn btn--primary">
           <img src="assets/icons/cart.png" alt="" class="btn__icon" width="16" height="16">
           Order Now
@@ -98,32 +120,32 @@
       </div>
       <ul class="ingredients__grid">
         <li class="ingredient-card">
-          <img src="assets/images/ing-hawthorn.png" alt="" loading="lazy">
+          <span class="ingredient-card__icon"><img src="assets/images/ing-1 (1).png" width="231" height="120" alt=""></span>
           <h3>Hawthorn Leaf &amp; Flower</h3>
           <p>Hawthorn has been used for centuries to support heart health and healthy circulation. It helps promote proper blood flow and supports overall cardiovascular balance, making it a cornerstone ingredient in Tenurima™.</p>
         </li>
         <li class="ingredient-card">
-          <img src="assets/images/ing-garlic.png" alt="" loading="lazy">
+          <span class="ingredient-card__icon"><img src="assets/images/ing-2 (1).png" width="231" height="120" alt=""></span>
           <h3>Garlic Bulb</h3>
           <p>Garlic is widely known for its ability to support cardiovascular wellness. It helps promote healthy blood vessel function and supports balanced blood pressure levels already within the normal range.</p>
         </li>
         <li class="ingredient-card">
-          <img src="assets/images/ing-olive.png" alt="" loading="lazy">
+          <span class="ingredient-card__icon"><img src="assets/images/ing-3 (1).png" width="231" height="120" alt=""></span>
           <h3>Olive Leaf</h3>
           <p>Olive leaf is rich in antioxidants that help protect cells from oxidative stress. It supports circulation and helps maintain healthy cardiovascular function as part of a daily wellness routine.</p>
         </li>
         <li class="ingredient-card">
-          <img src="assets/images/ing-hibiscus.png" alt="" loading="lazy">
+          <span class="ingredient-card__icon"><img src="assets/images/ing-4 (1).png" width="231" height="120" alt=""></span>
           <h3>Hibiscus Flower</h3>
           <p>Hibiscus has been traditionally used to support healthy blood flow and vascular function. It helps promote relaxation of blood vessels, supporting balanced blood pressure and circulation.</p>
         </li>
         <li class="ingredient-card">
-          <img src="assets/images/ing-b6.png" alt="" loading="lazy">
+          <span class="ingredient-card__icon"><img src="assets/images/ing-5 (1).png" width="231" height="120" alt=""></span>
           <h3>Vitamin B6 (Pyridoxal-5-Phosphate)</h3>
           <p>Vitamin B6 plays a key role in red blood cell formation and oxygen transport. It helps support energy levels and proper circulation throughout the body.</p>
         </li>
         <li class="ingredient-card">
-          <img src="assets/images/ing-b12.png" alt="" loading="lazy">
+          <span class="ingredient-card__icon"><img src="assets/images/ing-6 (1).png" width="231" height="120" alt=""></span>
           <h3>Vitamin B12 (Cyanocobalamin)</h3>
           <p>Supports red blood cell production and helps maintain healthy nerve function. Adequate B12 levels are essential for proper oxygen delivery and overall cardiovascular wellness.</p>
         </li>
@@ -139,24 +161,26 @@
 
   <!-- WHY CHOOSE -->
   <section class="why">
-    <img class="why__bg" src="assets/images/why-bg.png" alt="" loading="lazy">
+    <img class="why__bg why__bg--left" src="assets/images/why-bg.png" width="989" height="816" alt="">
+    <img class="why__bg why__bg--right" src="assets/images/Mask group-ingredients.png" width="1086" height="783" alt="" aria-hidden="true">
+    <img class="why__lights" src="assets/images/luzes.png" width="1920" height="824" alt="" aria-hidden="true">
     <div class="container why__inner">
       <p class="eyebrow eyebrow--light">Ingredients</p>
       <h2 class="why__title">Why Thousands Choose <span class="accent">Tenurima™</span></h2>
       <div class="why__grid">
         <ul class="why__list why__list--left">
-          <li><img src="assets/icons/icon-heart.png" alt="" width="20" height="20">Supports heart and cardiovascular health</li>
-          <li><img src="assets/icons/icon-gauge.png" alt="" width="20" height="20">Maintain energy and overall wellness</li>
-          <li><img src="assets/icons/icon-clock.png" alt="" width="20" height="20">Easy daily routine just 1 capsule twice daily</li>
+          <li><img src="assets/images/b1.png" alt="" width="40" height="40">Supports heart and cardiovascular health</li>
+          <li><img src="assets/images/b4.png" alt="" width="40" height="40">Maintain energy and overall wellness</li>
+          <li><img src="assets/images/b3.png" alt="" width="40" height="40">Easy daily routine just 1 capsule twice daily</li>
         </ul>
         <div class="why__bottle-wrap">
-          <img class="why__pedestal" src="assets/images/pedestal.png" alt="" loading="lazy" aria-hidden="true">
-          <img class="why__bottle" src="assets/images/bottle-straight.png" alt="Frasco Tenurima" loading="lazy">
+          <img class="why__bottle" src="assets/images/Mockup-Tenurima-1.png" width="490" height="457" alt="Frasco Tenurima">
+          <img class="why__pedestal" src="assets/images/pedestal.png" width="462" height="397" alt="" aria-hidden="true">
         </div>
         <ul class="why__list why__list--right">
-          <li><img src="assets/icons/icon-drop.png" alt="" width="20" height="20">Supports healthy blood pressure levels</li>
-          <li><img src="assets/icons/icon-flow.png" alt="" width="20" height="20">Promotes proper blood circulation</li>
-          <li><img src="assets/icons/icon-lungs.png" alt="" width="20" height="20">Helps support oxygen flow in the body</li>
+          <li><img src="assets/images/b2.png" alt="" width="40" height="40">Supports healthy blood pressure levels</li>
+          <li><img src="assets/images/b5.png" alt="" width="40" height="40">Promotes proper blood circulation</li>
+          <li><img src="assets/images/b6.png" alt="" width="40" height="40">Helps support oxygen flow in the body</li>
         </ul>
       </div>
     </div>
@@ -180,9 +204,10 @@
 
       <div class="testimonial-slider">
         <button class="slider__btn slider__btn--prev" type="button" aria-label="Depoimento anterior">‹</button>
+        <div class="testimonial-slider__viewport">
         <ul class="testimonial-slider__track">
           <li class="testimonial-card">
-            <img src="assets/images/testimonial-1.png" alt="Michael R." loading="lazy">
+            <img src="assets/images/testimonial-1.png" width="226" height="330" alt="Michael R.">
             <div>
               <span class="stars" aria-hidden="true">★★★★★</span>
               <p>"My blood pressure used to worry me at every checkup. After two months on Tenurima™, my doctor noticed the difference — and so did I."</p>
@@ -191,7 +216,7 @@
             </div>
           </li>
           <li class="testimonial-card">
-            <img src="assets/images/testimonial-2.png" alt="Susan L." loading="lazy">
+            <img src="assets/images/testimonial-2.png" width="228" height="330" alt="Susan L.">
             <div>
               <span class="stars" aria-hidden="true">★★★★★</span>
               <p>"I've wasted money on supplements that did nothing. Tenurima™ is different — I have more energy for my grandkids and finally feel like myself again."</p>
@@ -200,24 +225,25 @@
             </div>
           </li>
           <li class="testimonial-card">
-            <img src="assets/images/testimonial-3.png" alt="Robert D." loading="lazy">
+            <img src="assets/images/dep-tenurima-4 1.png" width="226" height="330" alt="Michelle P.">
             <div>
               <span class="stars" aria-hidden="true">★★★★★</span>
-              <p>"I was skeptical at first, but after a few weeks my energy levels improved and I feel steadier throughout the day. Glad I gave it a try."</p>
-              <p class="testimonial-card__name">Robert D., 58 – Ohio</p>
+              <p>"I was looking for something made with natural ingredients that I could trust. Tenurima™ checked all the boxes for me."</p>
+              <p class="testimonial-card__name">Michelle P., 44 – Ohio</p>
               <p class="testimonial-card__verified"><span class="icon-check" aria-hidden="true"></span>Verified Purchase</p>
             </div>
           </li>
           <li class="testimonial-card">
-            <img src="assets/images/testimonial-4.png" alt="Linda M." loading="lazy">
+            <img src="assets/images/dep-tenurima-3 1.png" width="228" height="330" alt="Daniel M.">
             <div>
               <span class="stars" aria-hidden="true">★★★★★</span>
-              <p>"Simple to take and it fits right into my routine. I feel more like myself again and my family has noticed the change too."</p>
-              <p class="testimonial-card__name">Linda M., 60 – Arizona</p>
+              <p>"I sit at a desk all day and my legs used to ache by 5pm. Since starting Tenurima™, I finish work feeling like I just started."</p>
+              <p class="testimonial-card__name">Daniel M., 49 – Arkansas</p>
               <p class="testimonial-card__verified"><span class="icon-check" aria-hidden="true"></span>Verified Purchase</p>
             </div>
           </li>
         </ul>
+        </div>
         <button class="slider__btn slider__btn--next" type="button" aria-label="Próximo depoimento">›</button>
       </div>
 
@@ -233,8 +259,8 @@
   <!-- SHIPPING BANNER -->
   <section class="shipping-banner">
     <div class="container shipping-banner__inner">
-      <img src="assets/images/shipping-badge.png" alt="" class="shipping-banner__badge" loading="lazy" width="70" height="70">
-      <p>Every <strong>6 Bottle</strong> Order Gets FREE Shipping Too!<br><span>*97% Of Customers Order 6 Bottles (Our Recommended Option)</span></p>
+      <img src="assets/images/shipping-badge.png" alt="" class="shipping-banner__badge" width="150" height="150">
+      <p class="shipping-banner__headline"><span class="accent">Every</span> <strong>6 Bottle</strong> <span class="accent">Order Gets</span> FREE Shipping <span class="accent">Too!</span><br><span class="shipping-banner__note">*97% Of Customers Order 6 Bottles (Our Recommended Option)</span></p>
     </div>
   </section>
 
@@ -255,63 +281,68 @@
 
       <ul class="pricing__grid">
         <li class="plan-card">
-          <p class="plan-card__tag">Basic</p>
-          <h3>2 Bottles</h3>
-          <p class="plan-card__supply">60 Day Supply</p>
-          <img src="assets/images/bottle-basic.png" alt="2 frascos Tenurima" loading="lazy">
-          <p class="plan-card__price"><span>$79</span>.98<small>/Bottle</small></p>
-          <ul class="plan-card__perks">
-            <li><span class="icon-check" aria-hidden="true"></span>Free Bonus!</li>
-            <li><span class="icon-check" aria-hidden="true"></span>Fast Shipping</li>
-            <li><span class="icon-check" aria-hidden="true"></span>Free Shipping</li>
-          </ul>
-          <button type="button" class="btn btn--buy" data-plan="basic">
-            <img src="assets/images/buy-now.png" alt="Buy Now" class="btn--buy__img">
-          </button>
-          <img src="assets/images/payment-cards.png" alt="Formas de pagamento aceitas" class="plan-card__pay" loading="lazy">
-          <p class="plan-card__total">TOTAL: <s>$350</s> $159.96</p>
+          <p class="plan-card__header">Basic</p>
+          <div class="plan-card__body">
+            <h3>2 Bottles</h3>
+            <p class="plan-card__supply">60 Day Supply</p>
+            <img class="plan-card__bottle" src="assets/images/bottle-basic.png" width="384" height="287" alt="2 frascos Tenurima">
+            <p class="plan-card__price"><span>$79</span>.98<small>/Bottle</small></p>
+            <ul class="plan-card__perks">
+              <li><span class="perk-icon perk-icon--x" aria-hidden="true">&#10005;</span>Free Bonus!</li>
+              <li><span class="perk-icon perk-icon--x" aria-hidden="true">&#10005;</span>Fast Shipping</li>
+              <li><span class="perk-icon perk-icon--x" aria-hidden="true">&#10005;</span>Free Shipping</li>
+            </ul>
+            <button type="button" class="btn btn--buy" data-plan="basic">
+              <img src="assets/images/buy-now.png" width="314" height="103" alt="Buy Now" class="btn--buy__img">
+            </button>
+            <img src="assets/images/payment-cards.png" width="314" height="29" alt="Formas de pagamento aceitas" class="plan-card__pay">
+            <p class="plan-card__total">TOTAL: <s>$350</s> $159.96</p>
+          </div>
         </li>
 
         <li class="plan-card plan-card--popular">
-          <p class="plan-card__ribbon">Most Popular</p>
-          <p class="plan-card__tag">6 Bottles</p>
-          <h3>6 Bottles</h3>
-          <p class="plan-card__supply">180 Day Supply</p>
-          <img src="assets/images/bottle-popular.png" alt="6 frascos Tenurima" loading="lazy">
-          <p class="plan-card__price"><span>$49</span>.98<small>/Bottle</small></p>
-          <ul class="plan-card__perks">
-            <li><span class="icon-check" aria-hidden="true"></span>2 Free Bonuses!</li>
-            <li><span class="icon-check" aria-hidden="true"></span>Fast &amp; Free Shipping</li>
-            <li><span class="icon-check" aria-hidden="true"></span>60 Days Guarantee</li>
-          </ul>
-          <button type="button" class="btn btn--buy" data-plan="popular">
-            <img src="assets/images/buy-now.png" alt="Buy Now" class="btn--buy__img">
-          </button>
-          <img src="assets/images/payment-cards.png" alt="Formas de pagamento aceitas" class="plan-card__pay" loading="lazy">
-          <p class="plan-card__total">TOTAL: <s>$1074</s> $299.88</p>
+          <p class="plan-card__header plan-card__header--popular">Most Popular</p>
+          <div class="plan-card__body">
+            <h3>6 Bottles</h3>
+            <p class="plan-card__supply">180 Day Supply</p>
+            <img class="plan-card__bottle" src="assets/images/bottle-popular.png" width="350" height="265" alt="6 frascos Tenurima">
+            <p class="plan-card__price"><span>$49</span>.98<small>/Bottle</small></p>
+            <ul class="plan-card__perks">
+              <li><span class="perk-icon perk-icon--check-green" aria-hidden="true">&#10003;</span>2 Free Bonuses!</li>
+              <li><span class="perk-icon perk-icon--check-green" aria-hidden="true">&#10003;</span>Fast &amp; Free Shipping</li>
+              <li><span class="perk-icon perk-icon--check-green" aria-hidden="true">&#10003;</span>60 Days Guarantee</li>
+            </ul>
+            <button type="button" class="btn btn--buy" data-plan="popular">
+              <img src="assets/images/buy-now.png" width="314" height="103" alt="Buy Now" class="btn--buy__img">
+            </button>
+            <img src="assets/images/payment-cards.png" width="314" height="29" alt="Formas de pagamento aceitas" class="plan-card__pay">
+            <p class="plan-card__total">TOTAL: <s>$1074</s> $299.88</p>
+          </div>
         </li>
 
         <li class="plan-card">
-          <p class="plan-card__tag">Bundle</p>
-          <h3>3 Bottles</h3>
-          <p class="plan-card__supply">90 Day Supply</p>
-          <img src="assets/images/bottle-bundle.png" alt="3 frascos Tenurima" loading="lazy">
-          <p class="plan-card__price"><span>$69</span>.98<small>/Bottle</small></p>
-          <ul class="plan-card__perks">
-            <li><span class="icon-check" aria-hidden="true"></span>1 Free Bonus!</li>
-            <li><span class="icon-check" aria-hidden="true"></span>Fast Shipping</li>
-            <li><span class="icon-check" aria-hidden="true"></span>60 Days Guarantee</li>
-          </ul>
-          <button type="button" class="btn btn--buy" data-plan="bundle">
-            <img src="assets/images/buy-now.png" alt="Buy Now" class="btn--buy__img">
-          </button>
-          <img src="assets/images/payment-cards.png" alt="Formas de pagamento aceitas" class="plan-card__pay" loading="lazy">
-          <p class="plan-card__total">TOTAL: <s>$557</s> $209.94</p>
+          <p class="plan-card__header">Bundle</p>
+          <div class="plan-card__body">
+            <h3>3 Bottles</h3>
+            <p class="plan-card__supply">90 Day Supply</p>
+            <img class="plan-card__bottle" src="assets/images/bottle-bundle.png" width="384" height="300" alt="3 frascos Tenurima">
+            <p class="plan-card__price"><span>$69</span>.98<small>/Bottle</small></p>
+            <ul class="plan-card__perks">
+              <li><span class="perk-icon perk-icon--check-yellow" aria-hidden="true">&#10003;</span>1 Free Bonus!</li>
+              <li><span class="perk-icon perk-icon--check-yellow" aria-hidden="true">&#10003;</span>Fast &amp; Free Shipping</li>
+              <li><span class="perk-icon perk-icon--check-green" aria-hidden="true">&#10003;</span>60 Days Guarantee</li>
+            </ul>
+            <button type="button" class="btn btn--buy" data-plan="bundle">
+              <img src="assets/images/buy-now.png" width="314" height="103" alt="Buy Now" class="btn--buy__img">
+            </button>
+            <img src="assets/images/payment-cards.png" width="314" height="29" alt="Formas de pagamento aceitas" class="plan-card__pay">
+            <p class="plan-card__total">TOTAL: <s>$557</s> $209.94</p>
+          </div>
         </li>
       </ul>
 
       <div class="guarantee-box">
-        <img src="assets/images/guarantee-seal.png" alt="Selo 60 dias de garantia" class="guarantee-box__seal" loading="lazy" width="130" height="130">
+        <img src="assets/images/guarantee-seal.png" alt="Selo 60 dias de garantia" class="guarantee-box__seal" width="130" height="130">
         <div>
           <h3>100% Satisfaction Guaranteed</h3>
           <p>Your purchase is protected by our 60-Day Satisfaction Promise from the original purchase date. If you're not satisfied with your experience, simply contact us through this link to our Contact Page, and our team will make it right.</p>
@@ -376,7 +407,7 @@
         </li>
       </ul>
 
-      <img class="facts-panel" src="assets/images/facts-panel.png" alt="Rótulo Tenurima com informações nutricionais: Supplement Facts, porção de 1 cápsula, 60 porções por embalagem, vitaminas C, B3, B6, B9 e B12, e blend proprietário de ervas." loading="lazy">
+      <img class="facts-panel" src="assets/images/facts-panel.png" alt="Rótulo Tenurima com informações nutricionais: Supplement Facts, porção de 1 cápsula, 60 porções por embalagem, vitaminas C, B3, B6, B9 e B12, e blend proprietário de ervas." width="1050" height="393">
     </div>
   </section>
 
@@ -385,7 +416,7 @@
 <footer class="footer" id="contact">
   <div class="container">
     <a href="#top" class="logo logo--footer">
-      <span class="logo__dot" aria-hidden="true"></span>
+      <img class="logo__dot" src="assets/icons/icon-drop.png" width="39" height="39" alt="" aria-hidden="true">
       <span class="logo__text">TENURIMA</span>
     </a>
     <nav class="footer__nav" aria-label="Links do rodapé">
@@ -400,7 +431,7 @@
     <p class="footer__disclaimer">
       These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. The information provided on this site is for informational purposes only and is not intended as a substitute for advice from your healthcare professional or any information contained on or in any product label or packaging. You should not use the information on this site for diagnosis or treatment of any health problem or for prescription of any medication or other treatment. You should consult with a healthcare professional before starting any diet, exercise or supplementation program, before taking any medication, or if you have or suspect you might have a health problem.
     </p>
-    <p class="footer__copy">Copyright © 2026 Tenurima. All Rights Reserved.<br>Fingerlink Labs LLC, 601 Ryland ST STE 200 A, Reno, NV 89502</p>
+    <p class="footer__copy">Copyright © 2026 Tenurima. All Rights Reserved.<br>Fraganief LABS, LLC 401 Ryland ST STE 200 A, Reno, NV 89502</p>
   </div>
 </footer>
 
