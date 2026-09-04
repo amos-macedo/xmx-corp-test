@@ -314,6 +314,14 @@ p { margin: 0 0 12px; }
   .hero__content { margin-left: 50px; min-width: 0; }
 }
 
+
+@media (max-width: 1020px) {
+.hero__rating {
+  display: flex;
+  justify-content: center;
+}
+}
+
 .hero__rating {
   display: flex;
   align-items: center;
@@ -410,9 +418,10 @@ p { margin: 0 0 12px; }
 
 .hero__bottle--front {
   width: 460px;
-  right: 55.5%;
-  top: 0%;
+  right: 60%;
+  top: 7%;
   z-index: 2;
+  transform: rotate(-5deg);
 }
 
 .hero__bottle--back {
@@ -427,31 +436,33 @@ p { margin: 0 0 12px; }
 }
 
 .hero__pill--red {
-  width: 50px;
-  left: 81.2%;
-  top: 60%;
+  width: 80px;
+  left: 45%;
+  top: 70%;
   z-index: 0;
 }
 
 .hero__pill--blurred {
   width: 55px;
-  left: 80.2%;
-  top: 4%;
-  transform: rotate(20deg);
+  left: 43%;
+  top: 30%;
+  transform: rotate(-5deg);
 }
 
 .hero__pill--sharp {
   width: 90px;
-  left: -25%;
+  left: -35%;
   top: 72%;
-  transform: rotate(-20deg);
+  transform: rotate(5deg);
   z-index: 3;
 }
 
 .hero__badges {
   position: absolute;
-  bottom: 0px;
-  left: -10px;
+  bottom: -30%;
+  left: 30px;
+  /* bottom: 0px;
+  left: -10px; */
   background: rgba(40,10,14,0.4);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--radius-md);
@@ -1145,7 +1156,7 @@ p { margin: 0 0 12px; }
    Footer
    ========================================================================== */
 
-.footer { background: var(--color-maroon); color: rgba(255,255,255,0.7); padding: 46px 0 30px; text-align: center; }
+.footer { background: var(--color-maroon); color: rgba(255,255,255,0.7); padding: 46px 0 0; text-align: center; }
 
 .logo--footer { justify-content: center; color: var(--color-white); margin-bottom: 20px; }
 
@@ -1155,7 +1166,6 @@ p { margin: 0 0 12px; }
   justify-content: center;
   gap: 24px;
   font-size: 14px;
-  margin-bottom: 24px;
 }
 
 .footer__disclaimer { font-size: 12px; line-height: 1.6; max-width: 900px; margin: 0 auto 18px; color: rgba(255,255,255,0.45); border-top: 1px solid rgba(255,255,255,0.15); padding-top: 20px; }
@@ -1185,10 +1195,11 @@ p { margin: 0 0 12px; }
   .hero__media { display: block; position: relative; min-height: 460px; width: 100%; max-width: 420px; margin-inline: auto; }
   .hero__bottle--front { width: 260px; left: 50%; right: auto; transform: translateX(-62%); top: 0%; z-index: 2; }
   .hero__bottle--back { width: 280px; left: 50%; right: auto; transform: translateX(-34%); top: -6%; z-index: 1; }
-  .hero__pill--sharp { width: 40px; left: 2%; top: 28.8%; z-index: 5; }
+  .hero__pill--sharp { width: 40px; left: 15%; top: 28.8%; z-index: 5; }
   .hero__pill--blurred { width: 34px; left: 68%; top: 2%; z-index: 5; }
   .hero__pill--red { width: 30px; left: 70%; top: 50%; z-index: 0; }
   .hero__badges {
+    
     position: absolute;
     left: 50%;
     bottom: 60px;
@@ -1261,4 +1272,22 @@ p { margin: 0 0 12px; }
   .header__inner { flex-wrap: wrap; gap: 12px; justify-content: center; }
   .nav { display: none; }
   .facts-panel__facts { width: 130px; }
+}
+
+
+.footer-copy {
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-copy  p {
+  margin: 0 0 5px;
+  font-size: 12px;
+}
+
+.footer-copy  span {
+  font-size: 10px;
 }
